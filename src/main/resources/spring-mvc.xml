@@ -20,7 +20,7 @@
 
     <!-- 2. 组件扫描路径配置，让Spring 容器知道需要扫描哪些包路径下可以加载到容器中的类 -->
     <!--     多个扫描路径配置  base-package="com.app,com.core,JUnit4" 也可以写多份,一般直接写多份 -->
-    <context:component-scan base-package="com.bobo.code" />
+    <context:component-scan base-package="com.fcy.Controller" />
 
     <!-- 启动spring事务注解, $该启用必须在springMVC中,而不能在applicationContext.xml中配置,不然事务注解无效$
         也就是说只有这一行才能真正开启事务,单独地在类或方法上注解@Transaction只是作了事务标记而以-->
