@@ -2,8 +2,10 @@ package com.fcy;
 
 import com.fcy.HibernateJpaDemo.Dao.Impl.UserDaoImpl;
 import com.fcy.HibernateJpaDemo.Model.User;
+import org.eclipse.persistence.internal.jpa.EntityManagerImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.orm.jpa.LocalEntityManagerFactoryBean;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -13,10 +15,6 @@ import java.util.List;
 
 public class test {
     public static void main(String[] args) {
-        EntityManager entityManager;
-        EntityManagerFactory entityManagerFactory;
-        PersistenceContext persistenceContext;
-        PersistenceUnit persistenceUnit;
         ApplicationContext context = new ClassPathXmlApplicationContext("JpaDemo/application-context.xml");
         int beanDefinitionCount = context.getBeanDefinitionCount();
         String[] beanDefinitionNames = context.getBeanDefinitionNames();

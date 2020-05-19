@@ -3,7 +3,6 @@ package com.fcy.web;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.mock.web.MockHttpServletRequest;
@@ -18,11 +17,9 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.context.WebApplicationContext;
 
 import java.io.File;
-import java.io.UnsupportedEncodingException;
 import java.util.logging.Logger;
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration(value = "web")
