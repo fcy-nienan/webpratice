@@ -1,9 +1,7 @@
-package com.fcy.core;
+package com.fcy;
 
-import org.hibernate.Hibernate;
 import org.hibernate.dialect.MySQLDialect;
 import org.hibernate.dialect.function.SQLFunctionTemplate;
-import org.hibernate.dialect.function.StandardSQLFunction;
 import org.hibernate.type.StringType;
 
 public class CustomerMysqlDialect extends MySQLDialect {
